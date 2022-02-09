@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+}
+/* bagian navbar */
+.navbar {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+	padding: 20px 0;
+}
+.titleNavbar a {
+	font-size: 40px;
+	font-weight: bold;
+	color: #8DD8B1;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+nav ul li a {
+	margin: 0px 10px;
+	padding: 10px 20px;
+	color: #000;
+}
+nav ul li a:hover {
+	color: #8DD8B1;
+}
+.signUpNavbar button {
+	padding: 10px 20px;
+	border: none;
+	background-color: #8DD8B1;
+	color: #fff;
+	border-radius: 50px;
+	margin-right: 10px;
+	font-size: 18px;
+	cursor: pointer;
+	transition: .2s;
+}
+.signUpNavbar button:hover {
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #8DD8B1;
+}
+.signUpNavbar a {
+	font-size: 18px;
+	font-weight: 400;
+	margin-left: 10px;
+	color: #000;
+}
+/* bagian jumbotron */
+
+.jumbotron {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 30px 0;
+}
+.titleJumbotron {
+	width: 25.9%;
+}
+.titleJumbotron span {
+	color: #8DD8B1;
+}
+.titleJumbotron h2 {
+	font-size: 40px;
+}
+.titleJumbotron h2:nth-child(2) {
+	margin-bottom: 20px;
+}
+.titleJumbotron p {
+	margin-bottom: 10px;
+}
+.titleJumbotron button {
+	padding: 15px 30px;
+	border: none;
+	background-color: #8DD8B1;
+	border-radius: 50px;
+	margin-top: 20px;
+	color: #fff;
+	font-size: 18px;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+.titleJumbotron button:before {
+	content: 'SIGN UP NOW';
+	position: absolute;
+	width: 0%;
+	height: 100%;
+	background-color: #000;
+	top: 0;
+	left: 0;
+	border-radius: 50px;
+	transition: .2s;
+	color: #fff;
+	opacity: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.titleJumbotron button:hover:before {
+	width: 100%;
+	opacity: 1;
+}
+.imgJumbotron {
+	width: 39%;
+}
+
+/* bagian responsive */
